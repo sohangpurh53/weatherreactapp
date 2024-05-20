@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - npm run build
     - export DEPLOYPATH=/home/wesoswpi/public_html/
+    - npm run build
     - export BUILDPATH=./build/
     - /bin/cp -r $BUILDPATH* $DEPLOYPATH
