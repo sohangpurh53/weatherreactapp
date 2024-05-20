@@ -1,7 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/wesoswpi/public_html/
-    - npm run build
-    - export BUILDPATH=./build/
-    - /bin/cp -r $BUILDPATH* $DEPLOYPATH
+    - export DEPLOYPATH=/home/wesoswpi/repositories/weatherreactapp
+    - /bin/cp * $DEPLOYPATH
